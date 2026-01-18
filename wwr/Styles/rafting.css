@@ -1,4 +1,4 @@
-/* Reset box-model for all elements */
+/* Universal Reset */
 * {
     margin: 0;
     padding: 0;
@@ -19,13 +19,12 @@
     --body-font: Arial, Helvetica, sans-serif;
 }
 
-/* Body Styling */
+/* Body & Layout */
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
 }
 
-/* Layout */
 header,
 main,
 footer {
@@ -33,12 +32,14 @@ footer {
     margin: 0 auto;
 }
 
+/* Headings */
 h1,
 h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
 
+/* Basic Spacing */
 nav,
 p,
 section,
@@ -53,12 +54,7 @@ header {
     color: var(--accent2-color);
 }
 
-/* Social Media Footer */
-.socialmedia a {
-    text-decoration: none;
-}
-
-/* Hero Div */
+/* Hero Overlay */
 .hero {
     position: relative;
 }
@@ -84,7 +80,6 @@ header {
     position: absolute;
     bottom: 20px;
     right: 20px;
-    width: 250px;
 }
 
 .hero article img {
@@ -92,4 +87,9 @@ header {
     width: 125px;
     margin-left: 8px;
     border-radius: 8px;
+}
+
+/* Footer Social Media Links */
+.socialmedia a {
+    text-decoration: none;
 }
