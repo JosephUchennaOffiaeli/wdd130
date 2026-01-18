@@ -1,3 +1,11 @@
+/* Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation */
 nav {
     background-color: darkblue;
     padding: 10px;
@@ -9,24 +17,48 @@ nav a {
     padding: 20px;
 }
 
+/* Headings */
 h1 {
     color: darkblue;
 }
 
+/* Main Content */
 main {
     max-width: 840px;
     margin: 0 auto;
     padding: 10px;
 }
 
+/* Floated Profile Image */
+main img {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    border: 1px solid steelblue;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+    float: right;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Paragraphs */
+p {
+    padding: 0;
+}
+
+/* Aside Section */
 aside {
     width: 300px;
     margin: 20px auto;
+    /* you can remove if using .box for margin */
     border: 2px solid #ccc;
-    padding: 15px;
+    /* padding: 15px; <-- remove if using .box for padding */
     background-color: #f0f8ff;
     color: #333;
     border-radius: 8px;
+    position: relative;
+    /* needed for heading overlay */
 }
 
 aside img {
@@ -36,19 +68,19 @@ aside img {
     margin: 0 auto 10px;
 }
 
-main img {
-    width: 150px;
-    height: auto;
-    border-radius: 50%;
-    border: 1px solid steelblue;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
+/* Overlay Heading on Aside Image */
+aside h2 {
+    position: absolute;
+    top: 20px;
+    /* adjust as needed */
+    left: 20px;
+    /* adjust as needed */
+    color: white;
+    text-shadow: 1px 1px 3px #000;
+    /* optional for readability */
 }
 
-p {
-    padding: 0;
-}
-
+/* Footer */
 footer {
     margin-top: 20px;
     border-top: 2px solid #ccc;
@@ -56,4 +88,24 @@ footer {
     padding-top: 10px;
     color: #555;
     background-color: #fafafa;
+}
+
+/* Class Selectors */
+/* Box class for aside and lists */
+.box {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #ddd;
+    /* customize as desired */
+    color: #000;
+}
+
+/* Optional: Unordered List Styling */
+ul.box {
+    list-style-type: disc;
+}
+
+ul.box li {
+    margin-bottom: 0.5rem;
 }
