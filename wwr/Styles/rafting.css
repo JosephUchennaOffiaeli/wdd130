@@ -32,14 +32,12 @@ footer {
     margin: 0 auto;
 }
 
-/* Headings */
 h1,
 h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
 
-/* Basic Spacing */
 nav,
 p,
 section,
