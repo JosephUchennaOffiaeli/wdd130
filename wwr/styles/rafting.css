@@ -1,37 +1,28 @@
-/* ===============================
-   RESET
-================================ */
+/* CSS VARIABLES */
+:root {
+    --primary-color: #1d3557;
+    --secondary-color: #457b9d;
+    --accent-color: #e63946;
+    --light-color: #f1faee;
+    --heading-font: Georgia, serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
+/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* ===============================
-   VARIABLES
-================================ */
-:root {
-    --primary-color: #1d3557;
-    /* dark blue */
-    --secondary-color: #457b9d;
-    /* blue */
-    --accent-color: #e63946;
-    /* red */
-    --light-color: #f1faee;
-    /* off-white */
-    --heading-font: Georgia, serif;
-    --body-font: Arial, Helvetica, sans-serif;
-}
-
-/* ===============================
-   BASE STYLES
-================================ */
+/* BODY */
 body {
     font-family: var(--body-font);
+    color: var(--primary-color);
     background-color: var(--light-color);
-    color: #000;
 }
 
+/* PAGE WIDTH */
 header,
 main,
 footer {
@@ -39,118 +30,90 @@ footer {
     margin: 0 auto;
 }
 
-/* ===============================
-   HEADER
-================================ */
+/* HEADER */
 header {
     display: flex;
     align-items: center;
-    gap: 20px;
-    padding: 10px;
+    justify-content: space-between;
+    padding: 16px;
 }
 
 header img {
     width: 80px;
 }
 
-nav ul {
-    list-style: none;
-}
-
 nav a {
-    display: block;
+    margin: 0 10px;
     text-decoration: none;
     color: var(--primary-color);
-    padding: 4px 0;
     font-weight: bold;
 }
 
-/* ===============================
-   HERO SECTION
-================================ */
+/* HERO */
 .hero {
     position: relative;
 }
 
 .hero img {
-    width: 100%;
     display: block;
+    width: 100%;
+    height: auto;
 }
 
-/* Hero heading bar */
 .hero h1 {
     position: absolute;
     top: 20px;
     width: 100%;
-    background-color: rgba(29, 53, 87, 0.8);
-    color: white;
     text-align: center;
-    padding: 12px;
+    padding: 16px;
+    background-color: var(--secondary-color);
+    color: #fff;
+    opacity: 0.85;
     font-family: var(--heading-font);
 }
 
-/* Mission article overlay */
 .hero article {
     position: absolute;
     bottom: 20px;
     left: 20px;
     right: 20px;
-    background-color: rgba(29, 53, 87, 0.8);
-    color: white;
+    background-color: rgba(29, 53, 87, 0.85);
+    color: #fff;
     padding: 16px;
 }
 
 .hero article img {
     float: right;
     width: 125px;
-    margin-left: 10px;
-    border-radius: 6px;
+    margin-left: 16px;
 }
 
-/* ===============================
-   HISTORY SECTION
-================================ */
+/* SECTIONS */
 section {
-    margin: 30px 0;
-}
-
-section h2 {
-    background-color: var(--primary-color);
-    color: white;
-    padding: 10px;
-    text-align: center;
-    font-family: var(--heading-font);
-}
-
-section p {
+    margin: 24px 0;
     padding: 16px;
-    background-color: var(--secondary-color);
-    color: white;
-    line-height: 1.6;
 }
 
-/* ===============================
-   FOOTER
-================================ */
-
-footer p {
-    color: var(--accent-color);
+h2 {
+    font-family: var(--heading-font);
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 8px;
+    margin-bottom: 8px;
 }
 
+/* FOOTER */
 footer {
     text-align: center;
-    padding: 20px 0;
-}
-
-.socialmedia {
-    margin-top: 10px;
+    padding: 16px;
+    font-size: 0.9rem;
 }
 
 .socialmedia a {
     text-decoration: none;
-    margin: 0 6px;
 }
 
 .socialmedia img {
-    width: 50px;
+    width: 30px;
+    margin: 8px;
 }
