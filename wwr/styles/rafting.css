@@ -28,7 +28,7 @@
 ================================ */
 body {
     font-family: var(--body-font);
-    background-color: #ffffff;
+    background-color: var(--light-color);
     color: #000;
 }
 
@@ -132,6 +132,11 @@ section p {
 /* ===============================
    FOOTER
 ================================ */
+
+footer p {
+    color: var(--accent-color);
+}
+
 footer {
     text-align: center;
     padding: 20px 0;
@@ -147,5 +152,5 @@ footer {
 }
 
 .socialmedia img {
-    width: 32px;
+    width: 50px;
 }
