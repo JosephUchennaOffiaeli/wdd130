@@ -105,7 +105,6 @@ h2 {
 /* FOOTER */
 footer {
     text-align: center;
-    color: var(--accent-color);
     padding: 16px;
     font-size: 0.9rem;
 }
