@@ -2,6 +2,7 @@
 :root {
     --primary-color: #1d3557;
     --secondary-color: #457b9d;
+    --accent-color: #e63946;
     --light-color: #f1faee;
     --heading-font: Georgia, serif;
     --body-font: Arial, Helvetica, sans-serif;
@@ -104,6 +105,7 @@ h2 {
 /* FOOTER */
 footer {
     text-align: center;
+    color: var(--accent-color);
     padding: 16px;
     font-size: 0.9rem;
 }
