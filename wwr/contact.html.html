@@ -1,46 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
+<section class="contact-form">
+    <h2>Get in Touch</h2>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-      content="Contact White Water Rafting Co. for reservations, questions, or suggestions. We are here to serve you.">
-    <meta name="author" content="Joseph Uchenna Offiaeli">
-    <title>White Water Rafting Co. | Contact Us</title>
-    <link rel="stylesheet" href="styles/rafting.css">
-</head>
+    <form action="#" method="post">
 
-<body>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
 
-    <!-- HEADER -->
-    <header>
-        <div class="logo">
-            <img src="images/z-exciti.jpg.jpg" alt="White Water Rafting Co. Logo">
-        </div>
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="trips.html">Trips</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
+        <fieldset>
+            <legend>Purpose of Message:</legend>
 
-    <!-- MAIN -->
-    <main>
+            <label>
+                <input type="radio" name="purpose" value="general" required>
+                General Inquiry
+            </label>
 
-        <h1>Contact White Water Rafting Co.</h1>
+            <label>
+                <input type="radio" name="purpose" value="reservation">
+                Reservation Question
+            </label>
 
-        <!-- COMPANY INFO -->
-        <section class="company-info">
-            <h2>Company Information</h2>
-            <p><strong>Address:</strong> 123 River Street, Boise, Idaho</p>
-            <p><strong>Phone:</strong> +1 (208) 555-0199</p>
-            <p><strong>Email:</strong> info@whitewaterraftingco.com</p>
+            <label>
+                <input type="radio" name="purpose" value="suggestion">
+                Website Suggestion
+            </label>
+        </fieldset>
 
-            <!-- GOOGLE MAP -->
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.3896314385146!2d-116.2023136845029!3d43.61501807912313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54ae57fa2d0f6c29%3A0x1c8d4a5e1a8d5
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <label>
+            <input type="checkbox" name="newsletter">
+            Please subscribe me to the monthly newsletter
+        </label>
+
+        <button type="submit">Submit</button>
+
+    </form>
+</section>
